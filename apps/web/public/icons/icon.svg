@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B6E4F"/>
+      <stop offset="100%" stop-color="#074834"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DFC486"/>
+      <stop offset="50%" stop-color="#C9A24B"/>
+      <stop offset="100%" stop-color="#AA8535"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base (Safe for Maskable Icons) -->
+  <rect width="512" height="512" rx="100" fill="url(#bg)"/>
+
+  <!-- Inner Geometric Ring -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="#FAF7F0" stroke-opacity="0.15" stroke-width="4"/>
+  <circle cx="256" cy="256" r="175" fill="none" stroke="#C9A24B" stroke-opacity="0.3" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- Crescent Moon -->
+  <path d="M 275,135 A 130,130 0 1,0 365,345 A 110,110 0 1,1 275,135 Z" fill="url(#gold)"/>
+
+  <!-- 8-Pointed Star -->
+  <g transform="translate(325, 205) scale(0.85)">
+    <polygon points="0,-35 9,-11 35,-11 15,5 22,30 0,15 -22,30 -15,5 -35,-11 -9,-11" fill="#FAF7F0"/>
+    <circle cx="0" cy="0" r="6" fill="#C9A24B"/>
+  </g>
+
+  <!-- Dome Silhouette Base -->
+  <path d="M 180,395 C 180,320 256,275 256,275 C 256,275 332,320 332,395 Z" fill="#FAF7F0" fill-opacity="0.9"/>
+  <rect x="180" y="395" width="152" height="25" fill="#FAF7F0" fill-opacity="0.9"/>
+</svg>
